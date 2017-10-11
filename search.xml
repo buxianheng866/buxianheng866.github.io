@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title><![CDATA[iOS 11]]></title>
+    <url>%2F2017%2F10%2F11%2FiOS-11%2F</url>
+    <content type="text"><![CDATA[hexo g = hexo generate // 生成 hexo d = hexo deploy // 部署 hexo s = hexo server // 运行服务器 hexo new post “article title” //新建文章hexo g = hexo generate // 生成 hexo d = hexo deploy // 部署 hexo s = hexo server // 运行服务器 hexo new post “article title” //新建文章hexo g = hexo generate // 生成 hexo d = hexo deploy // 部署 hexo s = hexo server // 运行服务器 hexo new post “article title” //新建文章]]></content>
+      <categories>
+        <category>newLife</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[测试]]></title>
+    <url>%2F2017%2F10%2F11%2F%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"></content>
+  </entry>
 </search>
