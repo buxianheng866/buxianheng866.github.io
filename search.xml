@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[iOS 11]]></title>
+    <url>%2F2017%2F10%2F11%2FHexo%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[###快速找到app的文件夹 xcrun simctl get_app_container booted yourbundleId ###获取App的信息包括以上path xcrun simctl appinfo booted yourbundleId ###页面设配12345if (@available(iOS 11.0, *)) &#123; self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;&#125; else &#123; self.automaticallyAdjustsScrollViewInsets = NO;&#125; ###相册权限 使用UIImageWriteToSavedPhotosAlbum(nil,nil,nil,nil);这种方法保存图片到相册,在原来的增加NSPhotoLibraryUsageDescription的基础上需要增加权限:NSPhotoLibraryAddUsageDescription NSPhotoLibraryAddUsageDescription这个权限只有在保存图片到相册的时候才会触发，在iOS11之前NSPhotoLibraryUsageDescription包括用户的读写权限，iOS11后NSPhotoLibraryUsageDescription只有读的权限，NSPhotoLibraryAddUsageDescription有写的权限。1234567这个不需要权限[[PHPhotoLibrarysharedPhotoLibrary]performChanges:^&#123;PHAssetChangeRequest*photoAsset = [PHAssetChangeRequestcreationRequestForAssetFromImage:image];&#125;completionHandler:^(BOOLsuccess,NSError*_Nullableerror) &#123;&#125;]; ###在 Xcode 中使用模拟器的 Full-screen 模式 sudo mkdir /AppleInternal ###自定义NameColor ###APP 在iPhone X上无法全屏 使用Assets添加一张 1125 x 2436 的LaunchImagexcode9新打包要在构建版本的时候加入1024*1024 AppSore icon ###iPhone X 头部&amp;底部 StatusBar 高44px,NavigationBar 高44px 底部tabBar高83px如果设置了 prefersLargeTitle = YES NavigationBar 则为96pt ###放在导航栏上面的searchBar消失不见1234自定义view,之后-(CGSize)intrinsicContentSize &#123; return UILayoutFittingExpandedSize;&#125; ###iOS 11之后隐藏或者删除系统控件 比如tabbar12345需要在此后调用- (void)viewDidAppear:(BooL)animated &#123; [super viewDidAppear:animated]; [self.tabBar removeFromSuperview];&#125;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F10%2F11%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
